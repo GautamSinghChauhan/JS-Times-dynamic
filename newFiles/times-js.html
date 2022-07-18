@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Times</title>
+</head>
+<body>
+
+
+<button onclick="clearInterval(clock)">click here</button>
+<p id="showclock"></p>
+<script type="text/javascript">
+	
+	var clock = setInterval(clocktiming,1000);
+
+	function clocktiming() {
+		var d = new Date();
+		var Gautam = d.toLocaleTimeString();
+		document.getElementById('showclock').innerHTML = Gautam;
+	}
+
+
+
+</script>
+</body>
+</html>
